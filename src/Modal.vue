@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   agree: boolean | null;
   name: string;
   nameModifiers?: { [s: string]: boolean };
