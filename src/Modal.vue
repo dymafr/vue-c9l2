@@ -5,16 +5,12 @@
   </button>
   <button
     :class="{ active: agree == false }"
-    @click="updateValue($event, false)"
+    @click="updateNameValue($event, false)"
   >
     Non !
   </button>
   <hr />
-  <input
-    :value="name"
-    @input="emit('update:name', ($event.target as HTMLInputElement).value)"
-    type="text"
-  />
+  <input :value="name" @input="updateNameValue" type="text" />
 </template>
 
 <script setup lang="ts">
