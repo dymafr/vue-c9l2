@@ -1,16 +1,13 @@
 <template>
-  <input
-    :value="content"
-    @input="content = ($event.target as HTMLInputElement).value"
-    type="text"
-  />
+  <Modal v-model="content" />
   <p>{{ content }}</p>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import Modal from './Modal.vue';
 
-const content = ref('');
+const content = ref(null);
 </script>
 
 <style scoped lang="scss"></style>
