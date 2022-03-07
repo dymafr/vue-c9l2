@@ -1,5 +1,5 @@
 <template>
-  <Modal v-model:agree="content" v-model:name="name" />
+  <Modal v-model:agree="content" v-model:name.maj="name" />
   <p>{{ content }}</p>
   <p>{{ name }}</p>
 </template>
