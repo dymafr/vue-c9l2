@@ -5,7 +5,7 @@
   </button>
   <button
     :class="{ active: agree == false }"
-    @click="updateNameValue($event, false)"
+    @click="updateValue($event, false)"
   >
     Non !
   </button>
